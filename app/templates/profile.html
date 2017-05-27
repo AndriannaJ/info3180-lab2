@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+<!-- {% block css %}
+<style type="text/css">
+    .infobox{
+        width: 320px;
+       border-style: inset;
+        margin: 1px;
+    }
+    
+    #profile_pic, #data_div{
+        float: left;
+        width: 200px;
+        margin: 20px;
+    }
+    
+</style>
+{% endblock %} -->
+
+{% block main %}
+<div id ="headingandprofilepic" style="display: inline-block"> 
+    <div id="heading">
+        <h1>Profile</h1>
+    </div>
+
+    <div id= "profilepic"> 
+
+   
+<!--    <img src="/static/profilepic.jpg" width="150" height="150"> -->
+    <img src="{{ url_for('static', filename = 'profilepic.jpg') }}" width="200" height="85"></img>
+
+    </div>
+</div>
+    
+<body>
+    <div class= "aboutme"> 
+        <div class = "name"> 
+            <p> Andrianna Jack </p>
+        </div>
+    
+        <div class = "date">
+            <p> {{ date }} </p>
+        </div>
+        <hr>
+        
+        <div class = "userinfo">
+            <p> Username: AAJ </p>
+            <p> ID Number: 620000000 </p>
+            <p> Age: 22 </p>
+            <p> Gender: Female </p>
+        </div>
+        <hr>
+    
+        <div class = "Statusmessage"> 
+            <p> I wanna be a legendary coder. Plus I need an A for this Course! </p>
+        </div>
+    </div>
+</body>
+    
+{% endblock %}

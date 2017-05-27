@@ -1,3 +1,17 @@
 body {
     padding-top: 50px;
 }
+
+/*------------------profile---------------*/ 
+
+#profilepic{
+    float: left;
+    position: relative;
+    left: 100px;
+    right: 500px;
+}
+
+.aboutme{
+    float:right;
+    right: 300px;
+}
